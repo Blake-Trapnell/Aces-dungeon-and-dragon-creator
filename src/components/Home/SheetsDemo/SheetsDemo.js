@@ -53,25 +53,25 @@ class Sheets extends Component {
             <div className="Sheets">
                 <div className="Sheets_Main_Screen">
                     {this.state.userSheets ? this.state.userSheets.map(el =>
-                        <div className="SheetsDemo_CharacterList" key={el.character_name}>
-                            <div className="SheetsDemo_Character_Container">
-                                <div className="SheetsDemo_Info">
-                                    <h6 style={{color: "Black"}}>Character Name</h6>
-                                    <h4 className="SheetsDemo_h4" >{el.character_name}</h4>
+                        <div className="SheetsDemo_All_Sheets_Outer" key={el.character_name}>
+                                <div className="SheetsDemo_All_Sheets_Display">
+                                    <div className="SheetsDemo_Info">
+                                        <h6 style={{ color: "Black" }}>Character Name</h6>
+                                        <h4 className="SheetsDemo_h4" >{el.character_name}</h4>
+                                    </div>
+                                    <div className="SheetsDemo_Info">
+                                        <h6 style={{ color: "Black" }}>Player Name</h6>
+                                        <h4 className="SheetsDemo_h4" >{el.playername}</h4>
+                                    </div>
+                                    <div className="SheetsDemo_Info">
+                                        <h6 style={{ color: "Black" }}>Race</h6>
+                                        <h4 className="SheetsDemo_h4" >{el.race}</h4>
+                                    </div>
+                                    <div className="SheetsDemo_Info">
+                                        <h6 style={{ color: "Black" }}>Class</h6>
+                                        <h4 className="SheetsDemo_h4" >{el.class}</h4>
+                                    </div>
                                 </div>
-                                <div className="SheetsDemo_Info">
-                                <h6 style={{color: "Black"}}>Player Name</h6>
-                                    <h4 className="SheetsDemo_h4" >{el.playername}</h4>
-                                </div>
-                                <div className="SheetsDemo_Info">
-                                <h6 style={{color: "Black"}}>Race</h6>
-                                    <h4 className="SheetsDemo_h4" >{el.race}</h4>
-                                </div>
-                                <div className="SheetsDemo_Info">
-                                <h6 style={{color: "Black"}}>Class</h6>
-                                    <h4 className="SheetsDemo_h4" >{el.class}</h4>
-                                </div>
-                            </div>
                             <div className="SheetsDemo_Button_Container">
                                 <button onClick={() => this.printBySheet_id(el.sheet_id)} className="SheetsDemo_Button">Preview</button>
                                 <button onClick={() => this.editBySheet_id(el.sheet_id)} className="SheetsDemo_Button" >Edit</button>
@@ -85,22 +85,24 @@ class Sheets extends Component {
                     )
                         :
                         this.state.allSheets.map(el => (
-                            <div className="SheetsDemo_CharacterList" key={el.character_name}>
-                            <div className="SheetsDemo_Info">
-                                    <h6 style={{color: "Black"}}>Character Name</h6>
-                                    <h4 className="SheetsDemo_h4" >{el.character_name}</h4>
-                                </div>
-                                <div className="SheetsDemo_Info">
-                                <h6 style={{color: "Black"}}>Player Name</h6>
-                                    <h4 className="SheetsDemo_h4" >{el.playername}</h4>
-                                </div>
-                                <div className="SheetsDemo_Info">
-                                <h6 style={{color: "Black"}}>Race</h6>
-                                    <h4 className="SheetsDemo_h4" >{el.race}</h4>
-                                </div>
-                                <div className="SheetsDemo_Info">
-                                <h6 style={{color: "Black"}}>Class</h6>
-                                    <h4 className="SheetsDemo_h4" >{el.class}</h4>
+                            <div className="SheetsDemo_All_Sheets_Outer" key={el.character_name}>
+                                <div className="SheetsDemo_All_Sheets_Display">
+                                    <div className="SheetsDemo_Info">
+                                        <h6 style={{ color: "Black" }}>Character Name</h6>
+                                        <h4 className="SheetsDemo_h4" >{el.character_name}</h4>
+                                    </div>
+                                    <div className="SheetsDemo_Info">
+                                        <h6 style={{ color: "Black" }}>Player Name</h6>
+                                        <h4 className="SheetsDemo_h4" >{el.playername}</h4>
+                                    </div>
+                                    <div className="SheetsDemo_Info">
+                                        <h6 style={{ color: "Black" }}>Race</h6>
+                                        <h4 className="SheetsDemo_h4" >{el.race}</h4>
+                                    </div>
+                                    <div className="SheetsDemo_Info">
+                                        <h6 style={{ color: "Black" }}>Class</h6>
+                                        <h4 className="SheetsDemo_h4" >{el.class}</h4>
+                                    </div>
                                 </div>
                                 <div className="SheetsDemo_Button_Container">
                                     <button onClick={() => this.printBySheet_id(el.sheet_id)} className="SheetsDemo_Button">Preview</button>

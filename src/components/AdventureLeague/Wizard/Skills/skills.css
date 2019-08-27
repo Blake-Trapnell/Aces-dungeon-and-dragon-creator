@@ -53,6 +53,10 @@ input {
     align-items: flex-start;
 }
 
+.SPR {
+    margin: 0px 0px 20px 0px;
+}
+
 #Skills_Checkbox {
     margin: 0 0 0 1px;
     height: 20px;

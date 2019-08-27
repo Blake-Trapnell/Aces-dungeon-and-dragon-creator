@@ -25,6 +25,7 @@ input::-webkit-input-placeholder {
     background: linear-gradient(135deg, rgba(190, 68, 68, 0.9), rgb(54, 2, 2, .8) 70.71%);
     border-radius: 20px;
     box-shadow: 5px 10px 4px 1px #292929;
+    overflow-y: scroll;
 }
 
 .Adventure_Info_Display {
@@ -67,5 +68,13 @@ input::-webkit-input-placeholder {
     .Adventure_main {
         height: 90%;
         width: 100%;
+    }
+}
+
+@media(max-height: 420px) {
+    .Adventure_main {
+        height: 100%;
+        width: 100%;
+        box-shadow: none;
     }
 }
