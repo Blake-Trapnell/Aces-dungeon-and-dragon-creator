@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Metamorphous&display=swap');
+.Login_Outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://lh3.googleusercontent.com/Cv-_I_EzxVs6jC0hOp7ft9hV8uM8-Ntwmfedb349JWPE3zEMdJTjo08emAc_LYPKOqXcfuhPjK3UkoPLyW6u5jStY3ulgmSV6_C9BUMsAaTY2l6JSxwvdCAlescNGraAjQ59T2UXhKtXlJFVo86kkOP0K8HFWgji4PuADsO3kdHLEAS63NBkzA_rUp8eSZ1XUxPPE0NrdVoPTA0QFNLbjhCQgMhAUMlzWnstM0bRhqX34VEV20pu2p-9GHDjOfM-n3qJbyZOwvzqUBTbCUpxdDpNlCmvkAJv8RoQIM9GufKoFs6-FIMcBM6_yH1cobhe7yexfY5JGi_87V8RgxVqqQotJIa8xlm3O34ToockdYD4JspSuLHzOLdkEOxcnYEPdxt4haateUxfEn2PMOC04i351F4CCayQoDUwIltsH8jUgJlFtxtWt5OW0RDJtwsmx-PaFft7ylcXL3S9Q6fGeqRFbeodbZFU3p2FihJvDyCW2hMxU8P1biNbSovkWnED_vHbMAvulfrorGCLTUUipZp_U-XC_COSP95ZMy63EV2e_fCPBBtKY_cgobPg5w9OBsNidW-pc8YjP1Re_Xcz9wChnHc2ZMjqxF54qIt2etpoUmL9g-WksuVTwul78gFHE5SZWL0edYzj6ylMeTBcZ2DeEVkzPLI=w910-h975-no");
+    background-size: cover;
+}
+
+.Login_Inputs::-webkit-input-placeholder {
+    font-family: 'Metamorphous', cursive;
+    color: #eee7e7;
+}
+
+.Login_Background {
+    font-family: 'Metamorphous', cursive;
+    height: 90%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(175deg, rgba(201, 201, 19, 0.733), rgba(197, 7, 7, 0.801));
+    border-radius: 20px;
+    box-shadow: 5px 10px 4px 1px #292929;
+}
+
+.Login_main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(yellow, red);
+    background-image: url('https://lh3.googleusercontent.com/pttp7wBXOWXBySZITR6pxqGABWJN1JnGXQkhqK9mZlrG-57IOPlsWXyDarL-W7wA2f8fv8mj6RK7muKUQ_hrrapw3xSi3lwvzsBoOmMhhAo0kAlEslZZjSFqfANtDTpbs9cZsw9fALNlKsGL_ni06TxlrFUVel3_ICqg0HkMih_PsgPXVzkXyWaigPPY7I--O_UrLJ1rnBlclKnnt5zkSElrh2uzv1ezeP_a0dfGhUX4WgejMV0eiFr9z1SyY1eZBoX1B3Tz7jFWMr21ZWoZ0EEe9i5R5S284nFSA9KkWf8bkjx8Ip_TQbxpYw06hhHFDyqkuPVYESxaYJlBqUfsHSy6BKm9Bs3siBl8PEk4xZ51FbzjiPvn4Pdwe5bFnZe_oWAgVKn0kfPjxY8_HyqVSk6D5wQfhSKvAIQH8o1erWoEMwg4G-jWAVjab8oHICGoZWLoglM5tfQ5QL3n8VlHSuUfEYOzS634mPNYn_ZDgHrhE5Dlcit-w_wGguZoenhD435t7rATfxqi6pY4555BbC8lRaKcX3nqbBOGaUTu8R_iIhZdj5AqqwlvLsnezf-diEmM-8Bti2ualrLG2rR4xwZkaTnrqxNJBM-RToYkt23uXfrWkamUZ0qpR8IFoPxRYdZE25vtslMi1OCEJ0MP75HWeMicvJs=w775-h889-no');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-shadow: 5px 10px 4px 1px #292929;
+}
+
+.Login_Input_Container {
+    position: relative;
+    top: 20%;
+    height: 40%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Login_Inputs {
+    width: 70%;
+    height: 10%;
+    text-align: center;
+    border: 2px rgb(175, 175, 175) solid;
+    border-radius: 5px;
+    background: linear-gradient(135deg, rgb(39, 15, 15), rgb(139, 4, 4));
+    color: rgb(226, 224, 224);
+    font-size: 1.3rem;
+}
+
+.Login_Button_container {
+    height: 30%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Login_Button {
+    font-family: 'Metamorphous', cursive;
+    background-color: rgb(37, 37, 37);
+    height: 2rem;
+    width: 5rem;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 2px rgb(65, 13, 13);
+    border: 2px black;
+    border-style: none solid solid none
+}
+
+.Home_Loading {
+    margin: 0;
+}
+
+@media(max-width: 512px) {
+    .Login_Background {
+        height: 100%;
+        width: 100%;
+    }
+}

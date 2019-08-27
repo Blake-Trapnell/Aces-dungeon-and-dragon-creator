@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Metamorphous&display=swap');
+.Abilitypoints_Outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://lh3.googleusercontent.com/Cv-_I_EzxVs6jC0hOp7ft9hV8uM8-Ntwmfedb349JWPE3zEMdJTjo08emAc_LYPKOqXcfuhPjK3UkoPLyW6u5jStY3ulgmSV6_C9BUMsAaTY2l6JSxwvdCAlescNGraAjQ59T2UXhKtXlJFVo86kkOP0K8HFWgji4PuADsO3kdHLEAS63NBkzA_rUp8eSZ1XUxPPE0NrdVoPTA0QFNLbjhCQgMhAUMlzWnstM0bRhqX34VEV20pu2p-9GHDjOfM-n3qJbyZOwvzqUBTbCUpxdDpNlCmvkAJv8RoQIM9GufKoFs6-FIMcBM6_yH1cobhe7yexfY5JGi_87V8RgxVqqQotJIa8xlm3O34ToockdYD4JspSuLHzOLdkEOxcnYEPdxt4haateUxfEn2PMOC04i351F4CCayQoDUwIltsH8jUgJlFtxtWt5OW0RDJtwsmx-PaFft7ylcXL3S9Q6fGeqRFbeodbZFU3p2FihJvDyCW2hMxU8P1biNbSovkWnED_vHbMAvulfrorGCLTUUipZp_U-XC_COSP95ZMy63EV2e_fCPBBtKY_cgobPg5w9OBsNidW-pc8YjP1Re_Xcz9wChnHc2ZMjqxF54qIt2etpoUmL9g-WksuVTwul78gFHE5SZWL0edYzj6ylMeTBcZ2DeEVkzPLI=w910-h975-no");
+    background-size: cover;
+    font-family: 'Metamorphous', cursive;
+}
+
+input::-webkit-input-placeholder {
+    font-family: 'Metamorphous', cursive;
+    color: #292929;
+}
+
+select,
+option,
+input {
+    font-family: 'Metamorphous', cursive;
+    background: linear-gradient(rgb(255, 237, 136), rgb(219, 167, 35));
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+    font-size: 1.2rem;
+    font-style: bold;
+}
+
+.Abilitypoints_main {
+    font-family: 'Metamorphous', cursive;
+    height: 90%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(135deg, rgba(190, 68, 68, 0.9), rgb(54, 2, 2, .8) 70.71%);
+    border-radius: 20px;
+    box-shadow: 5px 10px 4px 1px #292929;
+}
+
+.Abilitypoints_Inner_Left {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Abilitypoints_Inner_Right {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Abilitypoints_Up {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Abilitypoints_Down {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Abilitypoints_Navigation {
+    font-family: 'Metamorphous', cursive;
+    border: none;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    background-image: url("https://lh3.googleusercontent.com/Cv-_I_EzxVs6jC0hOp7ft9hV8uM8-Ntwmfedb349JWPE3zEMdJTjo08emAc_LYPKOqXcfuhPjK3UkoPLyW6u5jStY3ulgmSV6_C9BUMsAaTY2l6JSxwvdCAlescNGraAjQ59T2UXhKtXlJFVo86kkOP0K8HFWgji4PuADsO3kdHLEAS63NBkzA_rUp8eSZ1XUxPPE0NrdVoPTA0QFNLbjhCQgMhAUMlzWnstM0bRhqX34VEV20pu2p-9GHDjOfM-n3qJbyZOwvzqUBTbCUpxdDpNlCmvkAJv8RoQIM9GufKoFs6-FIMcBM6_yH1cobhe7yexfY5JGi_87V8RgxVqqQotJIa8xlm3O34ToockdYD4JspSuLHzOLdkEOxcnYEPdxt4haateUxfEn2PMOC04i351F4CCayQoDUwIltsH8jUgJlFtxtWt5OW0RDJtwsmx-PaFft7ylcXL3S9Q6fGeqRFbeodbZFU3p2FihJvDyCW2hMxU8P1biNbSovkWnED_vHbMAvulfrorGCLTUUipZp_U-XC_COSP95ZMy63EV2e_fCPBBtKY_cgobPg5w9OBsNidW-pc8YjP1Re_Xcz9wChnHc2ZMjqxF54qIt2etpoUmL9g-WksuVTwul78gFHE5SZWL0edYzj6ylMeTBcZ2DeEVkzPLI=w910-h975-no");
+    border: 1px solid whitesmoke;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#Abilitypoints_h3 {
+    margin: 0px;
+    font-size: 2rem;
+}
+
+.Abilitypoints_button {
+    font-size: 2rem;
+    font-style: bold;
+    border-radius: 5px;
+    background-image: url("https://lh3.googleusercontent.com/Cv-_I_EzxVs6jC0hOp7ft9hV8uM8-Ntwmfedb349JWPE3zEMdJTjo08emAc_LYPKOqXcfuhPjK3UkoPLyW6u5jStY3ulgmSV6_C9BUMsAaTY2l6JSxwvdCAlescNGraAjQ59T2UXhKtXlJFVo86kkOP0K8HFWgji4PuADsO3kdHLEAS63NBkzA_rUp8eSZ1XUxPPE0NrdVoPTA0QFNLbjhCQgMhAUMlzWnstM0bRhqX34VEV20pu2p-9GHDjOfM-n3qJbyZOwvzqUBTbCUpxdDpNlCmvkAJv8RoQIM9GufKoFs6-FIMcBM6_yH1cobhe7yexfY5JGi_87V8RgxVqqQotJIa8xlm3O34ToockdYD4JspSuLHzOLdkEOxcnYEPdxt4haateUxfEn2PMOC04i351F4CCayQoDUwIltsH8jUgJlFtxtWt5OW0RDJtwsmx-PaFft7ylcXL3S9Q6fGeqRFbeodbZFU3p2FihJvDyCW2hMxU8P1biNbSovkWnED_vHbMAvulfrorGCLTUUipZp_U-XC_COSP95ZMy63EV2e_fCPBBtKY_cgobPg5w9OBsNidW-pc8YjP1Re_Xcz9wChnHc2ZMjqxF54qIt2etpoUmL9g-WksuVTwul78gFHE5SZWL0edYzj6ylMeTBcZ2DeEVkzPLI=w910-h975-no");
+    border: 1px solid whitesmoke;
+    color: white;
+    width: 50%;
+}
+
+.Abilitypoints_Button_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media(max-width: 512px) {
+    .Abilitypoints_main {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media(max-height: 400px) {
+    .Abilitypoints_button {
+        font-size: 1rem;
+    }
+    .Abilitypoints_Inner_Left {
+        font-size: .5rem;
+    }
+    #Abilitypoints_h3 {
+        font-size: 1rem;
+    }
+    .Abilitypoints_Navigation {
+        height: 20px;
+        width: 80px;
+        font-size: .8rem;
+    }
+    .Abilitypoints_main {
+        height: 100%;
+        width: 100%;
+    }
+}

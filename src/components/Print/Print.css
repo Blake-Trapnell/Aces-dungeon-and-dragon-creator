@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Metamorphous&display=swap');
+.Print_Outer {
+    height: 900px;
+    width: 700px;
+    background: url('https://lh3.googleusercontent.com/AuKqPikp2tTSCihDcnX-9AQQTaddcOlykfVCddGKaqUcW6Zg7HNj8-MEFV2uHQtL9izdefddXOidYc9WOT_Ir4s1ygmp4d2HhbH_sa5YT0ZPzwRT_tz1cxTAz9iVn1LTg7hC4CQ79m1W8stLNVKQV0IxB1eDgrjFHzvspzo5ORaxOQDiF1Fetc3IbltwmQtc9uk6iXnFg5tEixaEn96etcxskfGqjqKrxYJQN8OKV01yEtQFM5-9A-jwMBhO8ZBd1gqi6NsFIICscoM9SUctJRCJzIbpDyns1rb0DEe-EvxPxWBLB0mihockr5rRwhVmVqqgfO1MGfAft8eO7CMutXp9cTQyuIdZLd3OPzYtKXSl5S5MqO1dXETHU_22XrjhA_480r9ygos6GVkRgp3XiuH61oG2o-UPolXMJWZLJBah0m0hV6B5FZ6n5K4I1t8dKZv2PGk8F78whkw_VM9GbRhSNInTlHNA-nvJJEoPY_WHh16CzTJT8cxZ5c9qppwh3elNXgChEOgS8UeTNkX0tadgZD_4P0z8J1Q_jDEQ2LLmhBVS8xkGoM3mcKb333d0Jl2DqCgDo6ETT0vwFxNtSLoYfHMVQF07gmthae6nDefjr3sfdeSpRQmZ6125H1hFdLHMeHKaqPgEjEGbXEYz8CRCfzRdXbY=w754-h975-no');
+    background-size: cover;
+    font-family: 'Metamorphous', cursive;
+}
+
+.Print_Navigation {
+    font-family: 'Metamorphous', cursive;
+    border: none;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    background-image: url("https://lh3.googleusercontent.com/Cv-_I_EzxVs6jC0hOp7ft9hV8uM8-Ntwmfedb349JWPE3zEMdJTjo08emAc_LYPKOqXcfuhPjK3UkoPLyW6u5jStY3ulgmSV6_C9BUMsAaTY2l6JSxwvdCAlescNGraAjQ59T2UXhKtXlJFVo86kkOP0K8HFWgji4PuADsO3kdHLEAS63NBkzA_rUp8eSZ1XUxPPE0NrdVoPTA0QFNLbjhCQgMhAUMlzWnstM0bRhqX34VEV20pu2p-9GHDjOfM-n3qJbyZOwvzqUBTbCUpxdDpNlCmvkAJv8RoQIM9GufKoFs6-FIMcBM6_yH1cobhe7yexfY5JGi_87V8RgxVqqQotJIa8xlm3O34ToockdYD4JspSuLHzOLdkEOxcnYEPdxt4haateUxfEn2PMOC04i351F4CCayQoDUwIltsH8jUgJlFtxtWt5OW0RDJtwsmx-PaFft7ylcXL3S9Q6fGeqRFbeodbZFU3p2FihJvDyCW2hMxU8P1biNbSovkWnED_vHbMAvulfrorGCLTUUipZp_U-XC_COSP95ZMy63EV2e_fCPBBtKY_cgobPg5w9OBsNidW-pc8YjP1Re_Xcz9wChnHc2ZMjqxF54qIt2etpoUmL9g-WksuVTwul78gFHE5SZWL0edYzj6ylMeTBcZ2DeEVkzPLI=w910-h975-no");
+    border: 1px solid whitesmoke;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.Charactername {
+    position: relative;
+    right: 200px;
+    top: 52px;
+}
+
+.PlayerClass {
+    position: relative;
+    top: 17px;
+    right: 15px;
+}
+
+.Background {
+    position: relative;
+    bottom: 5px;
+    left: 120px;
+}
+
+.Race {
+    position: relative;
+    right: 12px;
+    top: 5px;
+}
+
+.Playername {
+    position: relative;
+    left: 225px;
+    bottom: 45px;
+}
+
+.Alignment {
+    position: relative;
+    bottom: 35px;
+    left: 120px;
+}
+
+.Strength {
+    position: relative;
+    right: 147px;
+    top: 20px;
+}
+
+.Dexterity {
+    position: relative;
+    right: 147px;
+    top: 35px;
+}
+
+.Constitution {
+    position: relative;
+    right: 147px;
+    top: 50px;
+}
+
+.Intelligence {
+    position: relative;
+    right: 147px;
+    top: 67px;
+}
+
+.Wisdom {
+    position: relative;
+    right: 147px;
+    top: 83px;
+}
+
+.Charisma {
+    position: relative;
+    right: 147px;
+    top: 98px;
+}
+
+.styled_h6 {
+    position: relative;
+    bottom: 79px;
+    right: 222px;
+    font-size: .764rem;
+}
+
+.style_h6_background {
+    height: 14px;
+    width: 14px;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid black;
+    position: relative;
+    bottom: 360px;
+    left: 104px;
+    font-size: .764rem;
+    border-radius: 50%;
+}
+
+.Passive_Perception {
+    position: relative;
+    bottom: 330px;
+    right: 310px;
+}
+
+.Proficiency_Bonus {
+    position: relative;
+    bottom: 895px;
+    right: 236px;
+}
+
+.Saving_Throws {
+    position: relative;
+    bottom: 830px;
+    right: 220px;
+    font-size: .75rem;
+}
+
+.style_h6_background_Throws {
+    height: 14px;
+    width: 14px;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid black;
+    position: relative;
+    bottom: 925px;
+    left: 104px;
+    font-size: .764rem;
+    border-radius: 50%;
+}
+
+.Armorclass {
+    position: relative;
+    bottom: 1094px;
+    right: 70px;
+}
+
+.initiative {
+    position: relative;
+    bottom: 1125px;
+}
+
+.Speed {
+    position: relative;
+    bottom: 1155px;
+    left: 70px;
+}
+
+.Current_Hit_Points {
+    position: relative;
+    bottom: 1115px;
+}
+
+.Hitdie {
+    position: relative;
+    bottom: 1013px;
+    right: 50px;
+}
+
+.Hit_Point_max {
+    position: relative;
+    bottom: 1120px;
+    left: 40px;
+}

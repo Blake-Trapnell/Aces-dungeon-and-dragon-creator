@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AcesDungeonCreater</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Metamorphous&display=swap');
+        .Preview_Outer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            background-image: url("https://lh3.googleusercontent.com/Cv-_I_EzxVs6jC0hOp7ft9hV8uM8-Ntwmfedb349JWPE3zEMdJTjo08emAc_LYPKOqXcfuhPjK3UkoPLyW6u5jStY3ulgmSV6_C9BUMsAaTY2l6JSxwvdCAlescNGraAjQ59T2UXhKtXlJFVo86kkOP0K8HFWgji4PuADsO3kdHLEAS63NBkzA_rUp8eSZ1XUxPPE0NrdVoPTA0QFNLbjhCQgMhAUMlzWnstM0bRhqX34VEV20pu2p-9GHDjOfM-n3qJbyZOwvzqUBTbCUpxdDpNlCmvkAJv8RoQIM9GufKoFs6-FIMcBM6_yH1cobhe7yexfY5JGi_87V8RgxVqqQotJIa8xlm3O34ToockdYD4JspSuLHzOLdkEOxcnYEPdxt4haateUxfEn2PMOC04i351F4CCayQoDUwIltsH8jUgJlFtxtWt5OW0RDJtwsmx-PaFft7ylcXL3S9Q6fGeqRFbeodbZFU3p2FihJvDyCW2hMxU8P1biNbSovkWnED_vHbMAvulfrorGCLTUUipZp_U-XC_COSP95ZMy63EV2e_fCPBBtKY_cgobPg5w9OBsNidW-pc8YjP1Re_Xcz9wChnHc2ZMjqxF54qIt2etpoUmL9g-WksuVTwul78gFHE5SZWL0edYzj6ylMeTBcZ2DeEVkzPLI=w910-h975-no");
+            background-size: contain;
+            font-family: 'Metamorphous', cursive;
+        }
+        
+        input::-webkit-input-placeholder {
+            font-family: 'Metamorphous', cursive;
+            color: #292929;
+        }
+        
+        select,
+        option,
+        input {
+            font-family: 'Metamorphous', cursive;
+            background: linear-gradient(rgb(255, 237, 136), rgb(219, 167, 35));
+            border: none;
+            border-radius: 5px;
+            height: 40px;
+            width: 200px;
+            font-size: 1.2rem;
+            font-style: bold;
+        }
+        
+        .Preview_main {
+            font-family: 'Metamorphous', cursive;
+            height: 90%;
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            border-radius: 20px;
+            box-shadow: 5px 10px 4px 1px #292929;
+            background: linear-gradient(135deg, rgba(190, 68, 68, 0.9), rgb(54, 2, 2, .8) 70.71%);
+            /* background-image: url('https://lh3.googleusercontent.com/-A_2dlS5h19M73GAh1hxHv0orAJ95FAyfxyLAqwrFP1IAWh7tYOOIuJs9vr_z4OsuS3eK8ZtTC4VOp1bf_HlKjc67-Akj9G5dFG34WS8CD8gv2Q2BZhl6ghs5A7gbcPbB_1_5MeZf2i5G_7kHgut6cAsKpNqKzYU82gLYIUsGF1FABIwonzTdOI___eupufNX0G6w6Uul_EieO6ND8fzCeGgUqdoCG1uFnGTvvZDtBdpjqtjt0UKWdtrr9RQiF8F3jOeCXJjg53JkiNr5cskrxWz10pxKQUBbWdurWQzw2gXrRgdBpW0TOAKW-cMJuPxAmItf5mF040zsBZm3VPCWytvMQiXz2aH50A9klnIQLCGpkAJwTFg1fIUlaH0f0xPwhAzET5XNQxzYCE2zHF5qbzJHCZHjQb04HncAiCduXMZTOkj40pG2aiS4xNIq85c88ZiVSagmWN7Jox5bu5UigIU1h6vCg86xd-duIWxPZRB1r5n_IfoiwFlRdsZ0rAJiNGpDPaINDNTuDx--W0EeX1KasI4mnfhymem0XtPw0s1cWuDt9ZpluDVOJk7JIFmmHEQqqUS6Q1qNEf6lMVqhDUye-G2j7w_QRz0e2sJlFgGuzfxrZjUoL2jRLsWE_bBSPZXEv6_WbmxCpLIY9Fr4ikbx1weZx0=w1331-h926-no');
+    background-size: cover;
+    background-repeat: no-repeat; */
+        }
+        
+        .Preview_Sheet {
+            height: 100%;
+            width: 500px;
+            background-repeat: no-repeat;
+            display: flex;
+            position: relative;
+            top: 7%;
+            align-items: center;
+            flex-direction: column;
+            /* background-image: url('https://lh3.googleusercontent.com/MbFZ9p5wAtaOk6Pe0zbjtLM7vHXW9UpA2lqNuz9rqC8C45w27XNo5yY7rdQM_zuZPcf_B8fhrbvDYx1j2p9kpXrITbJVQPqF5OpJIwOHw8Y7OKCsKhkJ4BIMCsi0-ErM6UVm-ZJ5eBiVDTz5Jo21__hJt1ubNz3-ne55-ZNfMeINjO4juMvsN1vAe-Zm0sf_b-L29vHTQI4OAJK0FM8XGymsA3em1KIXcqrWykXmbgJQNJM7cr71oMTT_SUwn1DAVHuXAI0pMQGeFfqULaKw6r-5WRlpAbmF9ed3gRq7AgsBBKW6sJDfYH0g-lk-Dx5Vx2S5hIpanwof66GNZYH66-gVC9lDwujgw0cVTu5etrWtq9UZh7-gA4lBARaPkiJxXGeiqU3krBcbQUISgXgLMXYF4_muAPMoTrsVDODhSxfs7q8eCArDuzdKmjHTf3O_oc5JSSyzetBvBfW-wDQvcME1g0Ryf0wcepVy3eGtrrlajADbdI9_dij43Jb0dPOP9hK_QdAXvoPrbZVYt0wKz21OGjpOHggLi_Ky7hSFdd8r2SnBThUkjoU7I8dO-TbUoIrniEQrBAWP8BRL9-z_jfHRKgL1ft4lQd_jWZx63q5lhbeR968vCj5BeUlLcwVyYGV1cJbSVmZ1E0O-tV1zRc_72NzemYA=w716-h926-no');
+    background-size: contain; */
+        }
+        
+        @media(max-width: 650px) {
+            .Preview_main {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        
+        .Preview_Header {
+            height: 9%;
+            width: 100%;
+            border: Black 1px solid;
+            display: flex;
+            align-items: center;
+        }
+        
+        .Preview_Character_Name {
+            height: 50%;
+            width: 40%;
+            border: blue 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: 2%;
+        }
+        
+        .Preview_Character_Info {
+            height: 95%;
+            width: 55%;
+            border: blue 1px solid;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            left: 3%;
+        }
+        
+        .Preview_Character_Info_Box {
+            height: 49%;
+            width: 32%;
+            border: 1px solid blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .Preview_Main_Body {
+            height: 65%;
+            width: 100%;
+            display: flex;
+        }
+        
+        .Three_Pillars {
+            border: 1px red solid;
+            height: 100%;
+            width: 33%;
+        }
+        
+        .Three_Pillars_First {
+            border: 1px red solid;
+            height: 100%;
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .Preview_Abilitypoints_Column {
+            height: 100%;
+            width: 40%;
+            border: 1px brown solid;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .Preview_Skills_Column {
+            height: 100%;
+            width: 60%;
+            border: 1px brown solid;
+        }
+        
+        .Preview_Ability_skills {
+            height: 64%;
+            width: 100%;
+            display: flex;
+        }
+        
+        .Preview_Passive_Perception {
+            height: 7%;
+            width: 100%;
+            border: 1px brown solid;
+        }
+        
+        .Preview_Other_Profeciencies {
+            height: 29%;
+            width: 100%;
+            border: 1px brown solid;
+        }
+        
+        .Preview_Ability {
+            width: 100%;
+            height: 16%;
+            border: 1px brown solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .Preview_Skills_Column_Second {
+            height: 100%;
+            width: 60%;
+            border: 1px brown solid;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .Preview_Inspiration {
+            width: 100%;
+            height: 9%;
+            border: 1px brown solid;
+        }
+        
+        .Preview_Profeciency_Bonus {
+            width: 100%;
+            height: 9%;
+            border: 1px brown solid;
+        }
+        
+        .Preview_Saving_Throws {
+            width: 100%;
+            height: 22%;
+            border: 1px brown solid;
+        }
+        
+        .Preview_Skills {
+            width: 100%;
+            height: 100%;
+            border: 1px brown solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: rgba(255, 255, 255, 0.404)
+        }
+        
+        .Preview_Individual_Skill {
+            height: 5%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .Preview_Middle_One {
+            height: 10%;
+            width: 100%;
+            border: 1px purple solid;
+        }
+        
+        .Preview_Middle_Two {
+            height: 17%;
+            width: 100%;
+            border: 1px purple solid;
+        }
+        
+        .Preview_Middle_Three {
+            height: 9%;
+            width: 100%;
+            border: 1px purple solid;
+        }
+        
+        .Preview_Middle_Four {
+            height: 28%;
+            width: 100%;
+            border: 1px purple solid;
+        }
+        
+        .Preview_Middle_Five {
+            height: 34%;
+            width: 100%;
+            border: 1px purple solid;
+        }
+        
+        .Preview_Personality {
+            height: 35%;
+            width: 100%;
+            border: 1px rgb(33, 161, 8) solid;
+        }
+        
+        .Preview_Traits {
+            height: 64%;
+            width: 100%;
+            border: 1px rgb(33, 161, 8) solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div className="Print_Outer">
+        <div className="Print_Preview">
+            <div className="Print_Header">
+                <div className="Print_Character_Name">
+                    {sheetinfo.character_name}
+                </div>
+                <div className="Print_Character_Info">
+                    <div className="Print_Character_Info_Box">
+                        {playerClass}
+                    </div>
+                    <div className="Print_Character_Info_Box">
+                        {sheetinfo.background}
+                    </div>
+                    <div className="Print_Character_Info_Box">
+                        <h6>
+                            {sheetinfo.playername}
+                        </h6>
+                    </div>
+                    <div className="Print_Character_Info_Box">
+                        {sheetinfo.race}
+                    </div>
+                    <div className="Print_Character_Info_Box">
+                        {sheetinfo.alignment}
+                    </div>
+                    <div className="Print_Character_Info_Box">
+
+                    </div>
+                </div>
+            </div>
+            <div className="Print_Main_Body">
+                <div className="Three_Pillars_First">
+                    <div className='Print_Ability_skills'>
+                        <div className="Print_Abilitypoints_Column">
+                            <div className="Print_Ability">
+                                <h2 className="Print_Ability_h2 Strength">
+                                    {sheetinfo.strength}
+                                </h2>
+                                <h6 className="Print_Ability_h6 Strength">
+                                    +{ Math.floor((sheetinfo.strength - 10)/2)}
+                                </h6>
+                            </div>
+                            <div className="Print_Ability Dexterity">
+                                <h2 className="Print_Ability_h2">
+                                    {sheetinfo.dexterity}
+                                </h2>
+                                <h6 className="Print_Ability_h6">
+                                    +{ Math.floor((sheetinfo.dexterity - 10)/2)}
+                                </h6>
+                            </div>
+                            <div className="Print_Ability Constitution">
+                                <h2 className="Print_Ability_h2">
+                                    {sheetinfo.constitution}
+                                </h2>
+                                <h6 className="Print_Ability_h6">
+                                    +{ Math.floor((sheetinfo.constitution - 10)/2)}
+                                </h6>
+                            </div>
+                            <div className="Print_Ability Intelligence">
+                                <h2 className="Print_Ability_h2">
+                                    {sheetinfo.intelligence}
+                                </h2>
+                                <h6 className="Print_Ability_h6">
+                                    +{ Math.floor((sheetinfo.intelligence - 10)/2)}
+                                </h6>
+                            </div>
+                            <div className="Print_Ability Wisdom">
+                                <h2 className="Print_Ability_h2">
+                                    {sheetinfo.wisdom}
+                                </h2>
+                                <h6 className="Print_Ability_h6">
+                                    +{ Math.floor((sheetinfo.wisdom - 10)/2)}
+                                </h6>
+                            </div>
+                            <div className="Print_Ability Charisma">
+                                <h2 className="Print_Ability_h2">
+                                    {sheetinfo.charisma}
+                                </h2>
+                                <h6 className="Print_Ability_h6">
+                                    +{ Math.floor((sheetinfo.charisma - 10)/2)}
+                                </h6>
+                            </div>
+                        </div>
+                        <div className="Print_Skills_Column_Second">
+                            <div className="Print_Inspiration"></div>
+                            <div className="Print_Profeciency_Bonus">
+                                <div className="Print_Profeciency_Display">
+                                    <h3>+2</h3>
+                                </div>
+                            </div>
+                            <div className="Print_Saving_Throws"></div>
+                            <div className="Print_Skills_Container">
+                                <div className="Print_Skills_Selected">
+                                    <input type="radio" checked={sheetinfo.acrobatics} value="" className="Print_skills_Select" />
+                                    <input type="radio" checked={sheetinfo.animal_handling} value="" className="Print_skills_Select" />
+                                    <input type="radio" checked={sheetinfo.arcana} value="" className="Print_skills_Select" />
+                                    <input type="radio" checked={sheetinfo.athletics} value="" className="Print_skills_Select" />
+                                    <input type="radio" checked={sheetinfo.deception} value="" className="Print_skills_Select" />
+                                    <input type="radio" checked={sheetinfo.history} value="" className="Print_skills_Select" />
+                                    <input type="radio" checked={sheetinfo.insight} value="" className="Print_skills_Select" />
+                                    <input type="radio" checked={sheetinfo.intimidation} value="" className="Print_skills_Select" />
+                                    <input type="radio" checked={sheetinfo.investigation} value="" className="Print_skills_Select" />
+                                    <input type="radio" checked={sheetinfo.medicine} value="" className="Print_skills_Select" />
+                                    <input type="radio" checked={sheetinfo.nature} value="" className="Print_skills_Select" />
+                                    <input type="radio" checked={sheetinfo.perception} value="" className="Print_skills_Select" />
+                                    <input type="radio" checked={sheetinfo.performance} value="" className="Print_skills_Select" />
+                                    <input type="radio" checked={sheetinfo.persuassion} value="" className="Print_skills_Select" />
+                                    <input type="radio" checked={sheetinfo.religion} value="" className="Print_skills_Select" />
+                                    <input type="radio" checked={sheetinfo.sleight_of_hand} value="" className="Print_skills_Select" />
+                                    <input type="radio" checked={sheetinfo.stealth} value="" className="Print_skills_Select" />
+                                    <input type="radio" checked={sheetinfo.survival} value="" className="Print_skills_Select" />
+                                </div>
+                                <div className="Print_Skills_Value">
+                                    <h6>{Math.floor((sheetinfo.dexterity -10)/2)}</h6>
+                                    <h6>{Math.floor((sheetinfo.wisdom -10)/2)}</h6>
+                                    <h6>{Math.floor((sheetinfo.intelligence -10)/2)}</h6>
+                                    <h6>{Math.floor((sheetinfo.strength -10)/2)}</h6>
+                                    <h6>{Math.floor((sheetinfo.charisma -10)/2)}</h6>
+                                    <h6>{Math.floor((sheetinfo.intelligence -10)/2)}</h6>
+                                    <h6>{Math.floor((sheetinfo.wisdom -10)/2)}</h6>
+                                    <h6>{Math.floor((sheetinfo.charisma -10)/2)}</h6>
+                                    <h6>{Math.floor((sheetinfo.intelligence -10)/2)}</h6>
+                                    <h6>{Math.floor((sheetinfo.wisdom -10)/2)}</h6>
+                                    <h6>{Math.floor((sheetinfo.intelligence -10)/2)}</h6>
+                                    <h6>{Math.floor((sheetinfo.wisdom -10)/2)}</h6>
+                                    <h6>{Math.floor((sheetinfo.charisma -10)/2)}</h6>
+                                    <h6>{Math.floor((sheetinfo.charisma -10)/2)}</h6>
+                                    <h6>{Math.floor((sheetinfo.intelligence -10)/2)}</h6>
+                                    <h6>{Math.floor((sheetinfo.dexterity -10)/2)}</h6>
+                                    <h6>{Math.floor((sheetinfo.dexterity -10)/2)}</h6>
+                                    <h6>{Math.floor((sheetinfo.wisdom -10)/2)}</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="Print_Passive_Perception">
+                        <div className="Print_Passive_Perception_Container">
+                            {10 + Math.floor((sheetinfo.wisdom - 10)/2)}
+                        </div>
+                    </div>
+                    <div className="Print_Other_Profeciencies">
+                        <div className="Print_Other_Profeciencies_List">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </div>
+                    </div>
+
+                </div>
+                <div className="Three_Pillars">
+                    <div className="Print_Middle_One"></div>
+                    <div className="Print_Middle_Two"></div>
+                    <div className="Print_Middle_Three"></div>
+                    <div className="Print_Middle_Four"></div>
+                    <div className="Print_Middle_Five"></div>
+                </div>
+                <div className="Three_Pillars">
+                    <div className="Print_Skills">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <div className="Skills_Button_container">
+                <Link to="/home">
+                <button className="Abilitypoints_Navigation">Cancel</button>
+                </Link>
+                <Link to="/home">
+                <button onClick={this.createAndDownloadPdf} className="Abilitypoints_Navigation">Download</button>
+                </Link>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

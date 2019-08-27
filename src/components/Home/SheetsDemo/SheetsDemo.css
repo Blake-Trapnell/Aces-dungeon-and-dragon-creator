@@ -1,0 +1,64 @@
+.SheetsDemo_CharacterList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80vw;
+    height: 8vh;
+    background: linear-gradient(135deg, rgba(190, 68, 68, 0.9), rgb(54, 2, 2, .8) 70.71%);
+    border-radius: 5px;
+    align-items: center;
+    margin: 20px 0;
+    border: 2px solid silver;
+    color: rgb(231, 231, 231);
+}
+
+.SheetsDemo_Character_Container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+    width: 60%;
+    margin: 0;
+}
+
+.SheetsDemo_h4 {
+    margin: 0 5px;
+}
+
+.SheetsDemo_Button {
+    font-family: 'Metamorphous', cursive;
+    background-color: rgb(37, 37, 37);
+    height: 2rem;
+    width: 4.2rem;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 2px rgb(65, 13, 13);
+    border: 2px black;
+    border-style: none solid solid none;
+    margin: 2px 12px;
+}
+
+@media (max-width: 850px) {
+    .SheetsDemo_CharacterList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 80vw;
+        height: 120px;
+        background: linear-gradient(135deg, rgba(190, 68, 68, 0.9), rgb(54, 2, 2, .8) 70.71%);
+        border-radius: 5px;
+        align-items: center;
+        margin: 20px 0;
+        border: 2px solid silver;
+        color: rgb(233, 233, 233);
+        font-size: .8rem;
+    }
+    .SheetsDemo_Character_Container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+        margin: 0;
+    }
+}

@@ -1,0 +1,153 @@
+a {
+    text-decoration: none;
+    color: rgb(53, 53, 53);
+}
+
+.Nav_main {
+    font-family: 'Metamorphous', cursive;
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(46, 46, 46);
+}
+
+.Nav_gradient {
+    height: calc(100% - 2px);
+    width: 100%;
+    background: linear-gradient(90deg, rgb(180, 82, 78), rgb(87, 4, 4));
+}
+
+.Nav_Header {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(178deg, rgba(27, 165, 219, 0.582), rgba(165, 2, 2, 0.671));
+    background-image: url("https://lh3.googleusercontent.com/Aa6ivBpfiaZh22G2PlWbEstwc9I4VGdvRUqkmzLz5JUxDGV8ki0ZQwjELumTf0M9yiA2PAbaRo0l4KdJVCaWKHTZsT3NFQYYkzvC8hfPeaBucfz76zVBntcFUQHyVXKuhKcGnX4FUS2mRfj7KdHzGknaihkVJay6fVty3KiNUThU1W0kel8UOn8w1CLFF3ciKq5CyREzAHZm0dke2CXbI1DV_qKpxPNYadQsdLWgCWy_A1OCigT0mQ6gUUTLv2FGKWAYewU96qjhAVif_zoa5_jmWDophVjuemQYRkadS4zteVZUNrrfybQtCy1hIAQYhjsaBV7TyRMSeHfxmNFvHYOABhpR1PVYN-0mW4djVBvX_oBLyRSPVSKHu1Lob7ZvAnSJkDFefP77JSu20gYajGPQjklDElPtNwglLj-uiP2hiYWnK_OTxRrOariJM98E8JVkLm1pZyhKheUKyem5GH-Gkaw88psC77O-wp9VCdFge0hNB_g2CFh7hS-eECM1vwQIB87U2CW6iC56DfKF6ed9gD8SIOGw7FOensC3ZfsTG9W7t5YBgtgxxeFeNjpcwMncA6slHrauxQET4K0zrc-g0jVqHJc66oDH5ho1uhv9If2ZcKqm9O7WgxIM9VVfBh9CCLjtn9E3DTMTET17wGo83SO4Oao=w1207-h128-no");
+    background-size: contain;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Nav_Builders {
+    position: relative;
+    right: 20px;
+    height: 50%;
+    width: 550px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Nav_Links {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url("https://lh3.googleusercontent.com/ocS6rLLf9urHyjefHLS3bgkX0GP-QpCtbHIOi1-j6HqWTTG67ix8KXjqGDTnHzUna_n-bmQboBbV89URarQdi2wu7mnzJSTsI_2SVckCtv03HqZeIGyeJkSLe3MEYX-vY-SRZDOrr_vshvrDve2G7m5W3bgXALLZL7_dyoV4yn3THFkbSYkaZw4seOhn7Virwqegrxn0-uamb6R_8-uuqmZ8wjfDGP2xnsnJC6vDBfAhpA74lUONDsguuwc3ejTdrPUXwvjUwzre1O4DV6-e2TYFitEtZ7jKqi6FIG4mA6eVRI_F3BimutsIIjMf_Ly620WzZVBJ2aR6sSrgxXcc3luvq_SK37suhWVsgbJZ6lIllvAYpGL-WcKxHabLFmTo3D9rICS-B9aIKXQ_RH2riy8Y7-qijNtl1BbwISX9n0VvL9COVPi_78h3dyt-20qoJfmwoKAKvQJAX2HHDJeEQk11cNyxz9bdLOXXYMfxvYQNjQIEY-U3DPnlaVjo_YPm_Q8dNJMqVAU-O-GfiLAuPFDS7PRTHgJVGQzKVpdnFhYIl7Lq9n_gb_myoV6jdIPVKgPBVqr0-j5T8wJAG9kD9vAMBNrnK7T31-yB0DskRYJlLRThZzGR5BprEZOQEwu-s6repyMvbEwPa-YSfkYoG6GfQ4qwlC4=w540-h231-no");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    left: 10px;
+    color: rgb(53, 53, 53);
+    border-radius: 0 10px 0 10px;
+}
+
+.Nav_h3 {
+    position: relative;
+    right: 10px;
+}
+
+#AdventureLeague {
+    width: 25%;
+}
+
+.Nav_Hamburger {
+    height: 100%;
+    width: 20%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: silver;
+    position: relative;
+    left: 10px;
+    color: rgb(53, 53, 53);
+    border: 2px rgb(90, 89, 89);
+    border-style: solid none none solid;
+    border-radius: 0 10px 0 10px;
+}
+
+.Nav {
+    height: 0%;
+    width: 50px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: silver;
+}
+
+.Login {
+    border-radius: 0 10px 0 10px;
+    width: 100px;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 2px;
+    color: rgb(53, 53, 53);
+    border: 2px rgb(90, 89, 89);
+    border-style: solid none none solid;
+}
+
+.Nav_container {
+    display: none;
+}
+
+.Nav_Hamburger:hover {
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+@media(max-width: 630px) {
+    .Nav_h3 {
+        position: relative;
+        right: 0px;
+    }
+    .Nav_Links {
+        height: 100%;
+        width: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-image: url("https://lh3.googleusercontent.com/ocS6rLLf9urHyjefHLS3bgkX0GP-QpCtbHIOi1-j6HqWTTG67ix8KXjqGDTnHzUna_n-bmQboBbV89URarQdi2wu7mnzJSTsI_2SVckCtv03HqZeIGyeJkSLe3MEYX-vY-SRZDOrr_vshvrDve2G7m5W3bgXALLZL7_dyoV4yn3THFkbSYkaZw4seOhn7Virwqegrxn0-uamb6R_8-uuqmZ8wjfDGP2xnsnJC6vDBfAhpA74lUONDsguuwc3ejTdrPUXwvjUwzre1O4DV6-e2TYFitEtZ7jKqi6FIG4mA6eVRI_F3BimutsIIjMf_Ly620WzZVBJ2aR6sSrgxXcc3luvq_SK37suhWVsgbJZ6lIllvAYpGL-WcKxHabLFmTo3D9rICS-B9aIKXQ_RH2riy8Y7-qijNtl1BbwISX9n0VvL9COVPi_78h3dyt-20qoJfmwoKAKvQJAX2HHDJeEQk11cNyxz9bdLOXXYMfxvYQNjQIEY-U3DPnlaVjo_YPm_Q8dNJMqVAU-O-GfiLAuPFDS7PRTHgJVGQzKVpdnFhYIl7Lq9n_gb_myoV6jdIPVKgPBVqr0-j5T8wJAG9kD9vAMBNrnK7T31-yB0DskRYJlLRThZzGR5BprEZOQEwu-s6repyMvbEwPa-YSfkYoG6GfQ4qwlC4=w540-h231-no");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        left: 10px;
+        color: rgb(53, 53, 53);
+        border: none;
+        margin: 0 10px;
+        font-size: .5rem;
+    }
+    .Nav_Builders {
+        display: flex;
+        justify-content: flex-start;
+    }
+    #AdventureLeague {
+        width: 20%;
+    }
+    .Login {
+        height: 40px;
+        width: 60px;
+        font-size: .5rem;
+    }
+}
+
+@media(max-height:500px) {
+    .Nav_main {
+        height: 50px;
+    }
+}
