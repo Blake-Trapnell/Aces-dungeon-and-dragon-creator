@@ -21,7 +21,6 @@ module.exports = {
                 strength, dexterity, wisdom, intelligence, charisma, constitution, acrobatics, arcana, animal_handling, athletics, deception,
                 history, insight, intimidation, investigation, medicine, nature, perception, performance,
                 persuassion, religion, sleight_of_hand, stealth, survival, sheet_id } = req.body
-                console.log(charisma)
         db.update.update_by_sheet_id({character_name, playername, race, playerClass, background, alignment,
                 strength, dexterity, wisdom, intelligence, charisma, constitution, acrobatics, arcana, animal_handling, athletics, deception,
                 history, insight, intimidation, investigation, medicine, nature, perception, performance,

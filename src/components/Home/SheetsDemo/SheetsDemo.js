@@ -56,20 +56,20 @@ class Sheets extends Component {
                         <div className="SheetsDemo_All_Sheets_Outer" key={el.character_name}>
                                 <div className="SheetsDemo_All_Sheets_Display">
                                     <div className="SheetsDemo_Info">
-                                        <h6 style={{ color: "Black" }}>Character Name</h6>
-                                        <h4 className="SheetsDemo_h4" >{el.character_name}</h4>
+                                        <h4 style={{ color: "Black" }}>Character Name</h4>
+                                        <h2 className="SheetsDemo_h4" >{el.character_name}</h2>
                                     </div>
                                     <div className="SheetsDemo_Info">
-                                        <h6 style={{ color: "Black" }}>Player Name</h6>
-                                        <h4 className="SheetsDemo_h4" >{el.playername}</h4>
+                                        <h4 style={{ color: "Black" }}>Player Name</h4>
+                                        <h2 className="SheetsDemo_h4" >{el.playername}</h2>
                                     </div>
                                     <div className="SheetsDemo_Info">
-                                        <h6 style={{ color: "Black" }}>Race</h6>
-                                        <h4 className="SheetsDemo_h4" >{el.race}</h4>
+                                        <h4 style={{ color: "Black" }}>Class</h4>
+                                        <h2 className="SheetsDemo_h4" >{el.class}</h2>
                                     </div>
                                     <div className="SheetsDemo_Info">
-                                        <h6 style={{ color: "Black" }}>Class</h6>
-                                        <h4 className="SheetsDemo_h4" >{el.class}</h4>
+                                        <h4 style={{ color: "Black" }}>race</h4>
+                                        <h2 className="SheetsDemo_h4" >{el.race}</h2>
                                     </div>
                                 </div>
                             <div className="SheetsDemo_Button_Container">
@@ -88,20 +88,20 @@ class Sheets extends Component {
                             <div className="SheetsDemo_All_Sheets_Outer" key={el.character_name}>
                                 <div className="SheetsDemo_All_Sheets_Display">
                                     <div className="SheetsDemo_Info">
-                                        <h6 style={{ color: "Black" }}>Character Name</h6>
-                                        <h4 className="SheetsDemo_h4" >{el.character_name}</h4>
+                                        <h4 style={{ color: "Black" }}>Character Name</h4>
+                                        <h2 className="SheetsDemo_h4" >{el.character_name}</h2>
                                     </div>
                                     <div className="SheetsDemo_Info">
-                                        <h6 style={{ color: "Black" }}>Player Name</h6>
-                                        <h4 className="SheetsDemo_h4" >{el.playername}</h4>
+                                        <h4 style={{ color: "Black" }}>Player Name</h4>
+                                        <h2 className="SheetsDemo_h4" >{el.playername}</h2>
                                     </div>
                                     <div className="SheetsDemo_Info">
-                                        <h6 style={{ color: "Black" }}>Race</h6>
-                                        <h4 className="SheetsDemo_h4" >{el.race}</h4>
+                                        <h4 style={{ color: "Black" }}>Class</h4>
+                                        <h2 className="SheetsDemo_h4" >{el.class}</h2>
                                     </div>
                                     <div className="SheetsDemo_Info">
-                                        <h6 style={{ color: "Black" }}>Class</h6>
-                                        <h4 className="SheetsDemo_h4" >{el.class}</h4>
+                                        <h4 style={{ color: "Black" }}>Race</h4>
+                                        <h2 className="SheetsDemo_h4" >{el.race}</h2>
                                     </div>
                                 </div>
                                 <div className="SheetsDemo_Button_Container">

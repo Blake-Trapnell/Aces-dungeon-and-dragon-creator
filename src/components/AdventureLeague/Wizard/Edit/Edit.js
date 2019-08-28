@@ -19,7 +19,7 @@ class Edit extends Component {
 
     handleChange(e, key) {
         let ugly = {...this.state.sheetinfo}
-        ugly[key] = +e
+        ugly[key] = e
         this.setState({
             sheetinfo: {...ugly}
         })
